@@ -3,6 +3,10 @@ const config = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        'pattern-mobile': 'url("/assets/bg-mobile.svg")',
+        'pattern-desktop': 'url("/assets/bg-desktop.svg")',
+      },
       colors: {
         cstm: {
           primary: {
