@@ -16,46 +16,53 @@
 </svelte:head>
 
 <div
-  class="bg-pattern-mobile bg-no-repeat bg-contain bg-cstm-primary-violet w-screen h-screen p-8"
+  class="bg-pattern-mobile bg-no-repeat bg-contain p-8 bg-cstm-primary-violet min-h-screen flex flex-col"
 >
   <header>
     <nav>
       <img src="assets/logo.svg" alt="huddle logo" class="w-1/2" />
     </nav>
   </header>
-  <main class="text-center text-white">
-    <img src="/assets/illustration-mockups.svg" alt="illustration" />
-    <h1 class="font-poppins font-bold text-2xl">
+  <main class="text-center text-white flex-1 flex flex-col justify-evenly">
+    <img
+      src="/assets/illustration-mockups.svg"
+      alt="illustration"
+      class="w-full my-10"
+    />
+    <h1 class="font-poppins font-bold text-3xl">
       Build The Community Your Fans Will Love
     </h1>
-    <p class="font-open-sans">
+    <p class="font-open-sans text-xl mt-5">
       Huddle re-imagines the way we build communities. You have a voice, but so
       does your audience. Create connections with your users as you engage in
       genuine discussion.
     </p>
-    <button class="bg-white text-black px-10 py-2 rounded-full">Register</button
+    <button
+      class="font-open-sans bg-white text-cstm-primary-violet hover:bg-cstm-primary-soft-magenta shadow-lg hover:shadow-2xl py-4 my-10 rounded-full w-3/4 mx-auto"
+      >Register</button
     >
-    <div class="flex">
-      <img
-        src="/assets/icon-facebook.svg"
-        alt="facebook icon"
-        width="40"
-        height="40"
-      />
-      <img
-        src="/assets/icon-instagram.svg"
-        alt="instagram icon"
-        width="40"
-        height="40"
-      />
-      <img
-        src="/assets/icon-twitter.svg"
-        alt="twitter icon"
-        width="40"
-        height="40"
-      />
-    </div>
   </main>
+  <footer class="flex justify-center items-center gap-5">
+    <img
+      src="/assets/icon-facebook.svg"
+      alt="facebook icon"
+      width="40"
+      height="40"
+      class="hover:text-cstm-primary-soft-magenta"
+    />
+    <img
+      src="/assets/icon-instagram.svg"
+      alt="instagram icon"
+      width="40"
+      height="40"
+    />
+    <img
+      src="/assets/icon-twitter.svg"
+      alt="twitter icon"
+      width="40"
+      height="40"
+    />
+  </footer>
 </div>
 
 <style>
